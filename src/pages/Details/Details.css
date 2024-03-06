@@ -20,7 +20,7 @@
 
 .info_wrapper h1 {
   font-family: roboto_slab;
-  font-size: 70px;
+  font-size: clamp(3.4375rem, 3.1684rem + 1.3453vw, 5.3125rem);
   color: var(--gold-color);
   text-shadow: 4px 5px 10px rgba(0, 0, 0, 0.642);
   line-height: 110%;

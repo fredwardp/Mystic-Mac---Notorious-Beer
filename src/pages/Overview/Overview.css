@@ -15,7 +15,7 @@
 
 .overview_hero_div h1 {
   color: var(--gold-color);
-  font-size: 30px;
+  font-size: clamp(1.375rem, 1.2315rem + 0.7175vw, 2.375rem);
   font-family: sansita;
   width: 100px;
   text-align: center;
@@ -23,7 +23,7 @@
 }
 
 .overview_hero_div h1 span {
-  font-size: 20px;
+  font-size: clamp(1rem, 0.9103rem + 0.4484vw, 1.625rem);
   display: block;
 }
 
@@ -33,7 +33,7 @@
   border-color: #c2810877;
 }
 .product_wrapper {
-  background: url(../../../public/img/wooden-background2.png) no-repeat bottom;
+  background: url(../../../public/img/wooden-background2.png) no-repeat 0 -60vh;
   background-size: cover;
   background-attachment: fixed;
   padding: 10% 9%;
@@ -87,7 +87,7 @@
 
 .product_wrapper article h2 {
   color: var(--gold-color);
-  font-size: 45px;
+  font-size: clamp(2rem, 1.8117rem + 0.9417vw, 3.3125rem);
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -100,7 +100,7 @@
 }
 
 .creator {
-  font-size: 25px;
+  font-size: clamp(1rem, 0.9103rem + 0.4484vw, 1.625rem);
   color: whitesmoke;
   margin-bottom: 20px;
 }

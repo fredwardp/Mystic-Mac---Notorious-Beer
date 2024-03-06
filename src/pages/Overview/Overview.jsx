@@ -30,7 +30,7 @@ const Overview = () => {
               <div className="beer_content">
                 <h2>{beer.name}</h2>
                 <p className="sub">{beer.tagline}</p>
-                <p className="creator">{beer.contributed_by}</p>
+                <p className="creator">{`Created by: ${beer.name}`}</p>
                 <Link to={`/details/${beer._id}`}>Details</Link>
               </div>
             </article>
