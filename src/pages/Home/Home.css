@@ -1,0 +1,41 @@
+.hero_section {
+  min-height: 100svh;
+  background: url(../../../public/img/hero_bg4.png) no-repeat top;
+  background-size: cover;
+  color: white;
+  padding: 6% 6%;
+}
+
+.hero_section h1 {
+  font-family: sansita;
+  font-size: 166px;
+  color: var(--gold-color);
+  text-shadow: 4px 5px 10px rgba(0, 0, 0, 0.642);
+  line-height: 110%;
+}
+
+.big_sub {
+  font-family: sansita;
+  font-size: 85px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.hero_descr {
+  line-height: 180%;
+  font-size: 22px;
+  opacity: 0.9;
+  font-family: roboto_reg;
+  max-width: 47ch;
+  margin-bottom: 40px;
+}
+.link_wrapper {
+  gap: 25px;
+  display: flex;
+}
+
+.hero_section .hero_btn2 {
+  background-color: rgba(0, 0, 0, 0.337);
+  color: var(--green-color);
+  border: 1px solid #0aa35663;
+}

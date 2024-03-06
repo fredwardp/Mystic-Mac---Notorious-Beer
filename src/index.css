@@ -1,0 +1,109 @@
+@font-face {
+  font-family: sansita;
+  src: url(../public/fonts/Sansita_Swashed/SansitaSwashed-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: roboto_reg;
+  src: url(../public/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: roboto_slab;
+  src: url(../public/fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+
+:root {
+  --green-color: #4e965b;
+  --darkgreen-color: #184e37;
+  --gold-color: #c28008;
+}
+
+/* makes sizing simpler */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* dark mode user-agent-styles */
+/* improves punctuation in supported browsers */
+html {
+  /* color-scheme: dark light; */
+  hanging-punctuation: first last;
+}
+
+/* min body height */
+body {
+  min-height: 100svh;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* Improved heading in supported browsers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* improve readability with max-width on paragraphs and lists */
+/* prevent orphans in supported browsers */
+p,
+li {
+  max-width: var(--p-max-width, 65ch);
+  text-wrap: pretty;
+}
+
+a {
+  font-family: sansita;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-size: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.39);
+  border-radius: 10px;
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #184e379c;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/* smoth scroll-behavior for all sizes */
+/* (for reference: https://tinyurl.com/simplyreset) */
+@media (prefers-reduced-motion: no-preference) {
+  :has(:target) {
+    scroll-behavior: smooth;
+    /* optional: lets a little bit of space after scroling to target
+    & also prevents content from getting under a 'sticky' header. */
+    /* scroll-padding-top: 3rem; */
+  }
+}
+
+.sub {
+  color: var(--green-color);
+  font-size: 25px;
+  margin-bottom: 20px;
+}
